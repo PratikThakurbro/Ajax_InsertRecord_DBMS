@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #fce5c3;
+    text-align: center;
+}
+#main{
+    width: 90%;
+    margin-left: 5%;
+}
+#hered{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#search-bar{
+    position: absolute;
+    width: 20%;
+    right: 20px;
+}
+
+#hered h2{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 244, 179);
+    padding: 18px 0 18px 0;
+    font-size: x-large;
+}
+
+#table-data{
+    background-color: #ffffff;
+}
+
+#success-message{
+    /* width: 20%; */
+    text-align: center;
+    color: rgb(23, 36, 5);  
+    padding: 5px 10px 5px 10px;
+}
+#error-message{
+    text-align: center;
+    color: rgb(255, 47, 47);
+    padding: 5px 10px 5px 10px;
+}
+
+.delete-butn{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(235, 209, 209);
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.edit-butn{
+    background-color: rgb(255, 136, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(235, 209, 209);
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#modal{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.322);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#modal-form{
+    width: 35%;
+    /* text-align: center; */
+    background-color: #fff;
+    position: relative;
+    top: 20%;
+    right: 35%;
+    left: 30%;
+    padding: 15px;
+    border-radius: 5px;
+}
+#modal-form i{
+    position: absolute;
+    right: 2px;
+    top: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+#modal-form i:hover{
+    color: #f31010;
+}
+#modal-form h2{
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid burlywood;
+    text-transform: uppercase;
+    
+}
+#search-bar {
+    /* Box model */
+    width: 300px; /* Example width, adjust as needed */
+    padding: 10px;
+    border: 1px solid hsl(189, 46%, 68%);
+    border-radius: 5px;
+    
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    /* Input box styles */
+    width: 100%; /* Takes full width of parent */
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search::placeholder {
+    /* Placeholder text style */
+    color: #999;
+    font-style: italic;
+}
+
+/* Form styling */
+#AddForm {
+    width: 100%; /* Adjust width as needed */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #46d4f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Input field styling */
+.inp-f {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Save button styling */
+.save {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save:hover {
+    background-color: #0056b3;
+}
